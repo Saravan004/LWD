@@ -1,0 +1,58 @@
+body{
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
+  background-image: url(12.png);s
+	background-size: cover;
+	background-position: bottom;
+}
+
+.container{
+  position: relative;
+}
+ 
+ login-box{
+ 	max-width: 700px;
+ 	float: none;
+ 	margin: 150px auto;
+ }
+
+.login-left{
+	background: rgba(211,211,211,0.5);
+	float: none;
+	margin: 15px auto;
+}
+
+.centre{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+}
+ 
+ .login-right{
+
+ 	background-color: #fff;
+  padding-top: 10px;
+ 	padding: 85px;
+ }
+.button{
+	background-color: rgb(106,90,205);
+  border: none;
+  color: black;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer 
+}*/
+ 
+
+ 
+.form-control{
+	background-color: transparent !important;
+}
+
