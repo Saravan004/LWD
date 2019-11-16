@@ -2,15 +2,15 @@
 <?php
 require "db.php";
 session_start();
-if(isset($_POST['a'],$_POST['b']))
+if(isset($_POST['user_name'],$_POST['password']))
 {
-	$mob=$_POST['a'];
-	$pass=$_POST['b'];
-	$query=mysqli_query($con,"select * from user where user='$name' and password='$password'") or die(mysqli_error($con));
+	$user_name=$_POST['user_name'];
+	$pass=$_POST['password'];
+	$query=mysqli_query($con,"select * from user where user_name='$user_name' and password='$pass'") or die(mysqli_error($con));
     $row=mysqli_num_rows($query);
     if($row==1)
     {
-    	$_SESSION['mob']=$mob;
+    	$_SESSION['user_name']=$user_name;
     	header("location:display.php");
     }
     else

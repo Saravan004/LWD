@@ -1,6 +1,6 @@
 body{
 	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
-  background-image: url(12.png);s
+  background-image: url(12.png)
 	background-size: cover;
 	background-position: bottom;
 }
@@ -13,6 +13,7 @@ body{
  	max-width: 700px;
  	float: none;
  	margin: 150px auto;
+  align-content: center;
  }
 
 .login-left{
@@ -54,5 +55,10 @@ body{
  
 .form-control{
 	background-color: transparent !important;
+}
+
+
+#login-container{
+  margin-top: 142px;
 }
 

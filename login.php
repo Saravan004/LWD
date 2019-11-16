@@ -3,16 +3,14 @@
   <title>USER LOGIN/SIGNUP</title>
   <link rel="stylesheet" type="text/css" href="s.css">
   <link rel="stylesheet" type="text/class" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+  <link rel="shortcut icon" type="image/png" href="./12.png"/>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  
 </head>
 
-   
-
-<div class="container">
+<div class="container" id="login-container">
   <div class="login-box">
   <div class="row">
     <div class="col-md-6 login-left">
@@ -22,7 +20,7 @@
       <div class="form-group">
         <i class="glyphicon glyphicon-user" style="font-size:24px;"></i>
       <label><b>Username</b></label> 
-      <br><input type="text" name="user" class="form-control" required></br>
+      <br><input type="text" name="user_name" class="form-control" required></br>
     </div>
     <div class="form-group">
       <i class ="material-icons">https</i>
@@ -39,11 +37,11 @@
 <br>
 <div align="center">
 <div class="col-md-6 login-right ">
-<form action="signin.html" method="post">
+<form action="signin.php" method="post">
 <br><h2>Haven't Signed Up Yet ?</h2></br>
 <button type="submit" class="button">Sign-up</button>
 </form>
-<br><br><a href="Home.html">Home Page</a>
+<br><br><a href="index.html">Home Page</a>
   
 </div>
 </div>
