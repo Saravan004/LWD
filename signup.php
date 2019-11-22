@@ -21,8 +21,8 @@ if(isset($_POST['register']))
 	}
 	else
 	{
-		$_SESSION['user_name']=$user_name;
-    	header("location:display.php");
+		$_SESSION['username']=$user_name;
+    	header("location:login.php");
 	}
 }
 //mysqli_close($con);

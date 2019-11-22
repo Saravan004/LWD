@@ -1,8 +1,11 @@
+
 <html>
 <head>
   <title>USER LOGIN/SIGNUP</title>
+  
   <link rel="stylesheet" type="text/css" href="s.css">
-  <link rel="stylesheet" type="text/class" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/class" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/png" href="./12.png"/>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +44,8 @@
 <br><h2>Haven't Signed Up Yet ?</h2></br>
 <button type="submit" class="button">Sign-up</button>
 </form>
-<br><br><a href="index.html">Home Page</a>
+<br><h3>NEED HELP?<i style="font-size:24px" class="fa">&#xf0a7;</i></h3>
+<br><a href="welcome.html">Home Page</a>
   
 </div>
 </div>
@@ -54,11 +58,5 @@
 
 <div align="center">
 
-<?php
-session_start();
-require "db.php";
-if(isset($_SESSION['invalid']))
-	echo"invalid username or password";
-session_destroy();
-?>
+
 </html>

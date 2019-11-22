@@ -6,7 +6,29 @@
 </head>
 
 <body>
+<?php 
+  include "db.php";
+  $email="";
+  $n=$e="";
+   if(empty($_POST['email'])){
+    $e="INVALID";
+   }
+   else{
+    $email = test_input($_POST["email"]);
+    if(filter_var($email,FILTER_VALIDATE_EMAIL)){
+      $e="INVALID";
+    }
+   }
 
+  
+     function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+
+   }
+ ?>
   <form class="modal-content" action="signup.php" method="POST">
     <div class="container">
       <h1>Sign Up</h1>
@@ -16,11 +38,11 @@
       <input type="text" placeholder="Enter Username" name="username" required>
       <label for="Name"><b>Name</b></label>
       <input type="text" placeholder="Enter Name" name="name" required>
-	  
+	 
 	  <label for="Email ID"><b>Email ID</b></label>
-      <input type="text" placeholder="Enter Email ID" name="email" required>  
+      <br><input type="email" placeholder="Enter Email ID" name="email" required><span ><?php echo $n; ?></span>
 	  
-      <label for="psw"><b>Password</b></label>
+     <br> <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
       <div class="clearfix">
@@ -41,10 +63,9 @@ session_destroy();
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
-*{background-image: url(11.png);}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=email] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -54,7 +75,7 @@ input[type=text], input[type=password] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
   background-color: #ddd;
   outline: none;
 }

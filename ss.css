@@ -1,0 +1,58 @@
+body{
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
+ background-size: 12px;
+ background-image:  url("g944.png");
+	background-size: cover;
+	background-position: bottom;
+}
+
+.login-l{
+   background-color:rgba(211,211,211,0.5) ;
+   
+  padding-top: 5px;
+  padding: 85px;
+}
+.lo{
+  max-width: 700px;
+  float: none;
+  margin: 30px;
+}
+
+.container{
+  position: relative;
+}
+
+.but{
+  background-color: #4CAF50 ; color: black;;
+  border: none;
+  
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 0 9px #666;
+  cursor: pointer 
+} 
+
+.adddetails{
+  background-color:  #4CAF50  ; color: black;;
+  border: none;
+  
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 0 9px #333;
+  cursor: pointer 
+}
+
+
+.form-control{
+	background-color: transparent !important;
+}

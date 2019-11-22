@@ -1,6 +1,8 @@
 
 <?php
 require "db.php";
+$r=$_POST['$user_name'];
+echo "Welcome";
 session_start();
 if(isset($_POST['user_name'],$_POST['password']))
 {
